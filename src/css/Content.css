@@ -1,0 +1,105 @@
+.content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.content__inner {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+}
+
+.Q1,
+.Q2,
+.Q3,
+.done {
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+  border: #333;
+}
+
+.Q1 h2,
+.Q2 h2,
+.Q3 h2,
+.done h2 {
+  color: #ff3366;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button.be {
+  background-color: #ff99cc;
+  border: 1px black;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 40px;
+}
+button.anh {
+  background-color: #ffd18e;
+  border: 1px black;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 40px;
+}
+button.be:hover {
+  background-color: #ff66a3;
+  transform: scale(1.05);
+}
+
+button.anh:hover {
+  background-color: #ffa38f;
+  transform: scale(1.05);
+}
+
+.text-input input {
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.done p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+audio {
+  display: none;
+}
+.heart-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  animation: flyOut 2.5s ease-out forwards;
+}
+
+/* Animation bay ra từ giữa và lớn dần */
+@keyframes flyOut {
+  0% {
+    transform: translate(0, 0) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(2) rotate(360deg);
+    opacity: 0;
+  }
+}

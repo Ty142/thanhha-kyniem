@@ -1,0 +1,84 @@
+.Title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideWord 0.5s forwards;
+}
+
+@keyframes slideWord {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.Container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  margin: 10px;
+
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.yes {
+  background-color: #f7cfd8;
+  color: white;
+  border: 0.1 black;
+  width: 180px;
+  margin-right: 90px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 50px;
+  transition: 0.3s ease;
+}
+
+.yes:hover {
+  background-color: #e6b2ba;
+  transform: scale(1.05);
+}
+
+.no {
+  background-color: lightgray;
+  color: white;
+  border: 0.1 black;
+  width: 180px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 50px;
+  transition: 0.3s ease;
+}
+
+.no:hover {
+  background-color: grey;
+  transform: scale(1.05);
+}
+
+.btn-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideButton 0.5s forwards;
+}
+
+@keyframes slideButton {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* delay từng cái */
+.button button:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.button button:nth-child(2) {
+  animation-delay: 0.8s;
+}
