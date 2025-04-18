@@ -108,3 +108,29 @@ h2 {
     max-height: 45vh;
   }
 }
+/* Dòng cảm ơn sau video */
+.thank-you-message {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+  margin-top: 30px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+/* Hiệu ứng hiện chữ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive thêm */
+@media (max-width: 480px) {
+  .thank-you-message {
+    font-size: 1.6rem;
+  }
+}

@@ -10,7 +10,9 @@ const Video = () => {
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   const [showVideo, setShowVideo] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
   const audioRef = useRef(null);
+  const videoRef = useRef(null);
 
   const fullText1 =
     "Cùng xem lại 4 năm qua chúng ta đã bên nhau những sự kiện gì nhé hihi";
@@ -46,10 +48,15 @@ const Video = () => {
     }
 
     if (step === 2) {
-      // Hiện bảng "Đang phát video…" trước khi show video
       setTimeout(() => setShowVideo(true), 1500);
     }
   }, [step]);
+
+  // Hàm xử lý khi video kết thúc
+  const handleVideoEnded = () => {
+    setShowVideo(false);
+    setShowThankYou(true);
+  };
 
   return (
     <div className="video-container" style={{ width: "85%" }}>
@@ -76,7 +83,7 @@ const Video = () => {
           </motion.h1>
         )}
 
-        {step === 2 && !showVideo && (
+        {step === 2 && !showVideo && !showThankYou && (
           <motion.div
             key="loading"
             className="playing-message"
@@ -96,11 +103,23 @@ const Video = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
-            <video controls autoPlay>
+            <video controls autoPlay ref={videoRef} onEnded={handleVideoEnded}>
               <source src={video} type="video/mp4" />
               Trình duyệt của bạn không hỗ trợ video.
             </video>
           </motion.div>
+        )}
+
+        {showThankYou && (
+          <motion.h1
+            key="thankyou"
+            className="thank-you-message"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Cảm ơn em đã chịu đựng anh suốt 4 năm qua ❤️
+          </motion.h1>
         )}
 
         <audio ref={audioRef} src={p2} />
