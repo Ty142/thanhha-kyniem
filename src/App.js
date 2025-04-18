@@ -11,9 +11,9 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/iu" element={<Content />} />
-            <Route path="/kyniem" element={<Video />} />
+            <Route path="/thanhha-kyniem" element={<MainPage />} />
+            <Route path="/thanhha-kyniem/iu" element={<Content />} />
+            <Route path="/thanhha-kyniem/kyniem" element={<Video />} />
           </Routes>
         </BrowserRouter>
       </header>
