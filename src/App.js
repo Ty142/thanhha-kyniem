@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import Content from "./components/Content";
 import Video from "./components/Video";
@@ -9,13 +9,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
-            <Route path="/thanhha-kyniem" element={<MainPage />} />
-            <Route path="/thanhha-kyniem/iu" element={<Content />} />
-            <Route path="/thanhha-kyniem/kyniem" element={<Video />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/iu" element={<Content />} />
+            <Route path="/kyniem" element={<Video />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </header>
     </div>
   );

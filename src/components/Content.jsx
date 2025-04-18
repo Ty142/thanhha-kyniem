@@ -240,7 +240,7 @@ const Content = () => {
                       <strong>3️⃣ Bài hát tình yêu:</strong> {answers.song}
                     </p>
                     <div className="text-center mt-3">
-                      <Link to="/thanhha-kyniem/kyniem">
+                      <Link to="/kyniem">
                         <Button className="be text-light" variant="pink">
                           Qua Phần Tiếp theo hoiii
                         </Button>

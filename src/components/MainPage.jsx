@@ -43,7 +43,7 @@ const MainPage = () => {
       </h1>
 
       <div className="button mt-5">
-        <Link to={"/thanhha-kyniem/iu"}>
+        <Link to={"/iu"}>
           <button className="yes m-4 btn-animate">Nhớ nè {"<3"}</button>
         </Link>
         <button className="no m-4 btn-animate" onClick={handleNoClick}>
