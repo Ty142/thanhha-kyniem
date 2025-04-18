@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/thanhha-kyniem/static/css/main.a15ce271.css",
-    "main.js": "/thanhha-kyniem/static/js/main.77019d4d.js",
+    "main.css": "/thanhha-kyniem/static/css/main.a26213d9.css",
+    "main.js": "/thanhha-kyniem/static/js/main.fc8c8f02.js",
     "static/js/453.0accd9c5.chunk.js": "/thanhha-kyniem/static/js/453.0accd9c5.chunk.js",
     "static/media/Video.MOV": "/thanhha-kyniem/static/media/Video.b33383b05835227a4921.MOV",
     "static/media/colen.mp3": "/thanhha-kyniem/static/media/colen.1fd79f944a7d0ac26f81.mp3",
     "static/media/phim.mp3": "/thanhha-kyniem/static/media/phim.96dd6763bc43ac345901.mp3",
     "index.html": "/thanhha-kyniem/index.html",
-    "main.a15ce271.css.map": "/thanhha-kyniem/static/css/main.a15ce271.css.map",
-    "main.77019d4d.js.map": "/thanhha-kyniem/static/js/main.77019d4d.js.map",
+    "main.a26213d9.css.map": "/thanhha-kyniem/static/css/main.a26213d9.css.map",
+    "main.fc8c8f02.js.map": "/thanhha-kyniem/static/js/main.fc8c8f02.js.map",
     "453.0accd9c5.chunk.js.map": "/thanhha-kyniem/static/js/453.0accd9c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a15ce271.css",
-    "static/js/main.77019d4d.js"
+    "static/css/main.a26213d9.css",
+    "static/js/main.fc8c8f02.js"
   ]
 }
